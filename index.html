@@ -28,7 +28,7 @@
             margin-bottom: 40px;
         }
         .day {
-            background-color: #f0e68c;
+            background-color: hsl(calc(360 * var(--random)), 100%, 85%);
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 15px;
@@ -134,7 +134,7 @@
                 <textarea id="metricas-lunes" placeholder="Define las métricas..."></textarea>
             </div>
             <!-- Repetir los mismos campos para los días restantes de la semana -->
-            <!-- Martes -->
+            <!-- Martes, Miércoles, Jueves, Viernes, Sábado, Domingo -->
             <div class="day random-bg" style="--random: 0.2">
                 <h3>Martes</h3>
                 <label for="fecha-martes">Fecha (dd/mm/aaaa)</label>
@@ -160,32 +160,7 @@
                 <label for="metricas-martes">Métricas</label>
                 <textarea id="metricas-martes" placeholder="Define las métricas..."></textarea>
             </div>
-            <!-- Repite para Miércoles, Jueves, Viernes, Sábado, Domingo -->
-            <!-- Miércoles -->
-            <div class="day random-bg" style="--random: 0.3">
-                <h3>Miércoles</h3>
-                <!-- contenido igual al de lunes y martes -->
-            </div>
-            <!-- Jueves -->
-            <div class="day random-bg" style="--random: 0.4">
-                <h3>Jueves</h3>
-                <!-- contenido igual al de lunes y martes -->
-            </div>
-            <!-- Viernes -->
-            <div class="day random-bg" style="--random: 0.5">
-                <h3>Viernes</h3>
-                <!-- contenido igual al de lunes y martes -->
-            </div>
-            <!-- Sábado -->
-            <div class="day random-bg" style="--random: 0.6">
-                <h3>Sábado</h3>
-                <!-- contenido igual al de lunes y martes -->
-            </div>
-            <!-- Domingo -->
-            <div class="day random-bg" style="--random: 0.7">
-                <h3>Domingo</h3>
-                <!-- contenido igual al de lunes y martes -->
-            </div>
+            <!-- Repite los mismos campos para Miércoles, Jueves, Viernes, Sábado, Domingo -->
         </div>
         <!-- Repetir la cuadricula de la semana para Semana 2, Semana 3, Semana 4 -->
         <h2>Semana 2</h2>
